@@ -21,7 +21,7 @@ declare namespace WhatsappNamespace {
 
     export interface Whatsapp {
         sendTemplate(phone: string, template: template): AxiosResponse;
-        sendText(phone: string, text: string);
+        sendText(phone: string, text: string): AxiosResponse;
         start(obj: { secretToken: string, securedPath: string })
     }
 }
