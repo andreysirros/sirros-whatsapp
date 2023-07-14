@@ -1,3 +1,4 @@
+import { AxiosResponse } from 'axios'
 declare namespace WhatsappNamespace {
     interface component {
         type: string;
@@ -19,7 +20,7 @@ declare namespace WhatsappNamespace {
     }
 
     export interface Whatsapp {
-        sendTemplate(phone: string, template: template);
+        sendTemplate(phone: string, template: template): AxiosResponse;
         sendText(phone: string, text: string);
         start(obj: { secretToken: string, securedPath: string })
     }
