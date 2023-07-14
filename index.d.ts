@@ -21,7 +21,7 @@ declare namespace WhatsappNamespace {
     export interface Whatsapp {
         sendTemplate(phone: string, template: template);
         sendText(phone: string, text: string);
-        start({ secretToken: string, securedPath: string })
+        start(obj: { secretToken: string, securedPath: string })
     }
 }
 
