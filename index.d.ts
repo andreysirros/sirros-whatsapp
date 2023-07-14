@@ -11,7 +11,7 @@ declare namespace WhatsappNamespace {
 
     interface template {
         name: string;
-        langauge?: {
+        language?: {
             code: string;
             policy: string;
         }
